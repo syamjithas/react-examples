@@ -1,20 +1,12 @@
-import { useState ,createContext} from "react";
 import ContextComponent from "./UseContext/ContextComponent";
-
-export const ThemeContext = createContext();
+import ThemeProvider from "./UseContext/ThemeContext";
 
 const UseContextExample = () => {
-  const [darkTheme, setDarkTheme] = useState(true);
-
-  const toggleTheme = () => {
-    setDarkTheme((prevDarkTheme) => !prevDarkTheme);
-  };
   return (
     <>
-      <ThemeContext.Provider value={darkTheme}>
-        <button onclick={toggleTheme}>Toggle Theme</button>
+      <ThemeProvider>
         <ContextComponent />
-      </ThemeContext.Provider>
+      </ThemeProvider>
     </>
   );
 };
