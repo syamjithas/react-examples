@@ -18,6 +18,9 @@ const Landing = () => {
       <div>
         <Link to="/use-context-example">UseContextExample</Link>
       </div>
+      <div>
+        <Link to="/use-reducer-example">UseReducerExample</Link>
+      </div>
     </div>
   );
 };

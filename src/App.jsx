@@ -3,6 +3,7 @@ import UseEffectExample from "./Components/Hooks/UseEffectExample";
 import UseMemoExample from "./Components/Hooks/UseMemoExmple";
 import UseRefExample from "./Components/Hooks/UseRefExample";
 import UseContextExample from "./Components/Hooks/UseContextExample";
+import UseReducerExample from "./Components/Hooks/UseReducerExample"
 import Landing from "./Components/Landing";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="use-memo-example/" element={<UseMemoExample />} />
         <Route path="use-ref-example/" element={<UseRefExample />} />
         <Route path="use-context-example/" element={<UseContextExample />} />
+        <Route path="use-reducer-example/" element={<UseReducerExample />} />
       </Routes>
     </BrowserRouter>
   );
