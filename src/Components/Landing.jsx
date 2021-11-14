@@ -21,6 +21,9 @@ const Landing = () => {
       <div>
         <Link to="/use-reducer-example">UseReducerExample</Link>
       </div>
+      <div>
+        <Link to="/use-callback-example">UseCallbackExample</Link>
+      </div>
     </div>
   );
 };
