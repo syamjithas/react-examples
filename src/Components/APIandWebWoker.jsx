@@ -1,21 +1,32 @@
 import { useState, useEffect } from "react";
 import asyncFilter from "../Util/app.worker";
 import WebWorker from "../Util/WebWorker";
-const worker = new WebWorker(asyncFilter);
+
 const APIandWebWoker = () => {
   const [comments, setComments] = useState([]);
   const [filterd, setFilterd] = useState([]);
   const [search, setSearch] = useState("");
+  const [worker, serWorker] = useState();
+  console.log("render");
   useEffect(() => {
+    serWorker(new WebWorker(asyncFilter));
     fetch("https://jsonplaceholder.typicode.com/comments")
       .then((response) => response.json())
       .then((json) => {
         setComments(json);
       });
     return () => {
-      // worker.terminate();
+      console.log("unmount");
     };
   }, []);
+
+  useEffect(() => {
+    console.log("unmount");
+    return () => {
+      console.log("unmount");
+      worker && worker.terminate();
+    };
+  }, [worker]);
 
   useEffect(() => {
     if (worker) {
@@ -24,7 +35,7 @@ const APIandWebWoker = () => {
       };
       worker.postMessage({ comments, search });
     }
-  }, [search,comments]);
+  }, [search, comments, worker]);
 
   return (
     <>
