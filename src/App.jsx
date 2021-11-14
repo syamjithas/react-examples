@@ -6,6 +6,7 @@ import UseContextExample from "./Components/Hooks/UseContextExample";
 import UseReducerExample from "./Components/Hooks/UseReducerExample"
 import UseCallbackExample from "./Components/Hooks/UseCallbackExample"
 import UseCustomHookExample from "./Components/Hooks/UseCustomHookExample"
+import APIandWebWoker from "./Components/APIandWebWoker"
 import Landing from "./Components/Landing";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="use-reducer-example/" element={<UseReducerExample />} />
         <Route path="use-callback-example/" element={<UseCallbackExample />} />
         <Route path="use-custome-hook-example/" element={<UseCustomHookExample/>} />
+        <Route path="api-and-web-woker/" element={<APIandWebWoker/>} />
       </Routes>
     </BrowserRouter>
   );

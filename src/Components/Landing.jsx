@@ -27,6 +27,9 @@ const Landing = () => {
       <div>
         <Link to="/use-custome-hook-example">UseCustomHookExample</Link>
       </div>
+      <div>
+        <Link to="/api-and-web-woker">APIandWebWoker</Link>
+      </div>
     </div>
   );
 };
