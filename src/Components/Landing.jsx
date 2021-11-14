@@ -24,6 +24,9 @@ const Landing = () => {
       <div>
         <Link to="/use-callback-example">UseCallbackExample</Link>
       </div>
+      <div>
+        <Link to="/use-custome-hook-example">UseCustomHookExample</Link>
+      </div>
     </div>
   );
 };
