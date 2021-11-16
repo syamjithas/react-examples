@@ -37,7 +37,7 @@ const Landing = () => {
         <Link to="/use-layout-effect-example">UseLayoutEffectExample</Link>
       </div>
       <div>
-        {/* <Link to="/redux-example">ReduxExample</Link> */}
+        <Link to="/redux-example">ReduxExample</Link>
       </div>
     </div>
   );

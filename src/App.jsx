@@ -9,10 +9,10 @@ import UseCustomHookExample from "./components/hooks/UseCustomHookExample"
 import UseImperativeHandleExample from  "./components/hooks/UseImperativeHandleExample"
 import UseLayoutEffectExample from "./components/hooks/UseLayoutEffectExample";
 import APIandWebWoker from "./components/APIandWebWoker"
-// import ReduxExample from "./components/ReduxExample";
+import ReduxExample from "./components/ReduxExample";
 import Landing from "./components/Landing";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import "./resources/bootstrap.css"
 function App() {
   return (
     <BrowserRouter>
@@ -29,7 +29,7 @@ function App() {
         <Route path="api-and-web-woker/" element={<APIandWebWoker/>} />
         <Route path="use-imperative-handle-example/" element={<UseImperativeHandleExample/>} />
         <Route path="use-layout-effect-example/" element={<UseLayoutEffectExample/>} />
-        {/* <Route path="redux-example/" element={<ReduxExample/>} />        */}
+        <Route path="redux-example/" element={<ReduxExample/>} />       
       </Routes>
     </BrowserRouter>
   );
