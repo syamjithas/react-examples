@@ -33,6 +33,9 @@ const Landing = () => {
       <div>
         <Link to="/use-imperative-handle-example">UseImperativeHandleExample</Link>
       </div>
+      <div>
+        <Link to="/use-layout-effect-examplel">UseLayoutEffectExamplel</Link>
+      </div>
     </div>
   );
 };

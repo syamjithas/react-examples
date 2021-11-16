@@ -1,13 +1,15 @@
 import { useRef, forwardRef, useImperativeHandle, useState } from "react";
 
 let FancyInput = (props, ref) => {
-  const [val, setVal] = useState("");
+  const [val, setVal] = useState(0);
   const inputRef = useRef();
 
   useImperativeHandle(ref, () => ({
-    blur: () => {
+    alertVal: () => {
       document.title = val;
       inputRef.current.blur();
+      alert(val);
+      setVal(0);
     },
   }));
 

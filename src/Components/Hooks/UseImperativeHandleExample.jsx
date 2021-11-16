@@ -2,12 +2,22 @@ import { useRef } from "react";
 import FancyInput from "./UseImperativeHandle/FancyInput";
 const UseImperativeHandleExample = () => {
   const ref = useRef(null);
-  const onBlur = () => {
+  const alertVal = () => {
     console.log(ref.current); // Only contains one property!
-    ref.current.blur();
+    ref.current.alertVal();
   };
 
-  return <FancyInput ref={ref} onBlur={onBlur} />;
+  return (
+    <div>
+      <div>
+        <FancyInput ref={ref} />
+      </div>
+      button from parent componet
+      <div>
+        <button onClick={alertVal}>Alert</button>
+      </div>
+    </div>
+  );
 };
 
 export default UseImperativeHandleExample;
