@@ -1,5 +1,5 @@
 import React from "react";
-import useLocalStorage from "./UseCustom/useLocalStorage";
+import useLocalStorage from "./useCustom/useLocalStorage";
 
 const UseCustomHookExample = () => {
   const [name, setName] = useLocalStorage("name", "");

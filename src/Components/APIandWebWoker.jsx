@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import asyncFilter from "../Util/app.worker";
-import WebWorker from "../Util/WebWorker";
+import asyncFilter from "../util/app.worker";
+import WebWorker from "../util/webWorker";
 
 const APIandWebWoker = () => {
   const [comments, setComments] = useState([]);

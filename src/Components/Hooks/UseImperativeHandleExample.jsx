@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import FancyInput from "./UseImperativeHandle/FancyInput";
+import FancyInput from "./useImperativeHandle/FancyInput";
 const UseImperativeHandleExample = () => {
   const ref = useRef(null);
   const alertVal = () => {

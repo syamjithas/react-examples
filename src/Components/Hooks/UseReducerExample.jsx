@@ -1,8 +1,8 @@
 import { useReducer, useState } from "react";
 import { map, filter, compose, not, propEq } from "ramda";
-import { idGenerator } from "../../Util/utilFunctions";
-import ACTIONS from "./UseReducer/Actions";
-import TodoList from "./UseReducer/TodoList";
+import { idGenerator } from "../../util/utilFunctions";
+import ACTIONS from "./useReducer/Actions";
+import TodoList from "./useReducer/TodoList";
 
 const todoReducer = (todos, actions) => {
   switch (actions.type) {

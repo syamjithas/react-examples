@@ -1,5 +1,5 @@
-import ContextComponent from "./UseContext/ContextComponent";
-import ThemeProvider from "./UseContext/ThemeContext";
+import ContextComponent from "./useContext/ContextComponent";
+import ThemeProvider from "./useContext/ThemeContext";
 
 const UseContextExample = () => {
   return (

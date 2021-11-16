@@ -1,15 +1,16 @@
-import UseStateExample from "./Components/Hooks/UseStateExample";
-import UseEffectExample from "./Components/Hooks/UseEffectExample";
-import UseMemoExample from "./Components/Hooks/UseMemoExmple";
-import UseRefExample from "./Components/Hooks/UseRefExample";
-import UseContextExample from "./Components/Hooks/UseContextExample";
-import UseReducerExample from "./Components/Hooks/UseReducerExample"
-import UseCallbackExample from "./Components/Hooks/UseCallbackExample"
-import UseCustomHookExample from "./Components/Hooks/UseCustomHookExample"
-import APIandWebWoker from "./Components/APIandWebWoker"
-import UseImperativeHandleExample from  "./Components/Hooks/UseImperativeHandleExample"
-import UseLayoutEffectExample from "./Components/Hooks/UseLayoutEffectExample";
-import Landing from "./Components/Landing";
+import UseStateExample from "./components/hooks/UseStateExample";
+import UseEffectExample from "./components/hooks/UseEffectExample";
+import UseMemoExample from "./components/hooks/UseMemoExmple";
+import UseRefExample from "./components/hooks/UseRefExample";
+import UseContextExample from "./components/hooks/UseContextExample";
+import UseReducerExample from "./components/hooks/UseReducerExample"
+import UseCallbackExample from "./components/hooks/UseCallbackExample"
+import UseCustomHookExample from "./components/hooks/UseCustomHookExample"
+import UseImperativeHandleExample from  "./components/hooks/UseImperativeHandleExample"
+import UseLayoutEffectExample from "./components/hooks/UseLayoutEffectExample";
+import APIandWebWoker from "./components/APIandWebWoker"
+// import ReduxExample from "./components/ReduxExample";
+import Landing from "./components/Landing";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="api-and-web-woker/" element={<APIandWebWoker/>} />
         <Route path="use-imperative-handle-example/" element={<UseImperativeHandleExample/>} />
         <Route path="use-layout-effect-example/" element={<UseLayoutEffectExample/>} />
+        {/* <Route path="redux-example/" element={<ReduxExample/>} />        */}
       </Routes>
     </BrowserRouter>
   );
