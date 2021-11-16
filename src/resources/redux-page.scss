@@ -19,12 +19,23 @@ body {
   height: 100vh;
   flex-direction: row;
   align-content: space-around;
-}
-
-.sub-container {
-  display: flex;
-  width: 24vw;
-  height: 96vh;
-  background-color: #fbfbfd;
-  border-radius: 10px;
+  .sub-container {
+    display: flex;
+    width: 24vw;
+    height: 96vh;
+    background-color: #fbfbfd;
+    border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    .todo {
+      display: flex;
+      border: solid 1px #dedede;
+      width: 80%;
+      border-radius: 3px;
+      padding: 2px;
+      height: 55px;
+    }
+  }
 }

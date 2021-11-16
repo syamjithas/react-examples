@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { map } from "ramda";
+import { map, addIndex } from "ramda";
 import { useSelector, useDispatch } from "react-redux";
 import {
   decrement,
@@ -9,10 +9,11 @@ import {
   incrementIfOdd,
   selectTodo,
   selectStatus,
+  selectPage,
 } from "../store/features/todo/todoSlice";
 
 const Todo = () => {
-  const todoList = useSelector(selectTodo);
+  const todoList = useSelector(selectPage(0));
   const todoStatus = useSelector(selectStatus);
   const [loader, setLoader] = useState(false);
   console.log(todoList);
@@ -27,16 +28,16 @@ const Todo = () => {
 
   const dispatch = useDispatch();
   return (
-    <div>
+    <>
       {map((todo) => {
         return (
-          <div className="">
-            <span>{todo.title}</span>
-            <span>{todo.status}</span>
+          <div key={todo.id} className="todo">
+            <div>{todo.title}</div>
+            <div>{todo.status}</div>
           </div>
         );
       }, todoList)}
-    </div>
+    </>
   );
 };
 
