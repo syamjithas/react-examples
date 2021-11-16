@@ -3,6 +3,7 @@ import { map, filter, compose, not, propEq } from "ramda";
 import { idGenerator } from "../../Util/utilFunctions";
 import ACTIONS from "./UseReducer/Actions";
 import TodoList from "./UseReducer/TodoList";
+
 const todoReducer = (todos, actions) => {
   switch (actions.type) {
     case ACTIONS.ADD_TODO:
@@ -24,6 +25,7 @@ const todoReducer = (todos, actions) => {
 const newTodo = (name) => {
   return { id: idGenerator.next().value, name, completed: false };
 };
+
 const UseReducerExample = () => {
   const [todos, todoDispatch] = useReducer(todoReducer, []);
   console.log(todos);

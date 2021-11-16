@@ -30,6 +30,9 @@ const Landing = () => {
       <div>
         <Link to="/api-and-web-woker">APIandWebWoker</Link>
       </div>
+      <div>
+        <Link to="/use-imperative-handle-example">UseImperativeHandleExample</Link>
+      </div>
     </div>
   );
 };

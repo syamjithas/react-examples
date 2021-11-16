@@ -4,6 +4,7 @@ import List from "./UseCallback/List";
 const useCallbackExample = () => {
   const [number, setNumber] = useState(1);
   const [dark, setDark] = useState(false);
+
   const getItems = useCallback(
     (incrementer) => {
       return [number, number + 1 + incrementer, number + 2 + incrementer];
@@ -11,12 +12,16 @@ const useCallbackExample = () => {
     [number]
   );
 
+  // const getItems = (incrementer) => {
+  //   return [number, number + 1 + incrementer, number + 2 + incrementer];
+  // };
+
   const theme = useMemo(() => {
     return {
       backgroundColor: dark ? "#333" : "#FFF",
       color: dark ? "#FFF" : "#333",
     };
-  },[dark]);
+  }, [dark]);
 
   return (
     <div style={theme}>

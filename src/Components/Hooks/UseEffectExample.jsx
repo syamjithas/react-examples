@@ -4,7 +4,13 @@ const UseEffectExample = () => {
   const [countOne, setCountOne] = useState(0);
   const [countTwo, setCountTwo] = useState(0);
   const [updatedCounter, setUpdatedCounter] = useState("");
-
+  useEffect(() => {
+    console.log("did mount");
+    return () => {
+      console.log("unmount")
+    };
+  }, []);
+  useEffect(() => console.log("plain effect"));
   useEffect(() => {
     console.log("effect 1");
     setUpdatedCounter("count one updated");
@@ -13,7 +19,6 @@ const UseEffectExample = () => {
     console.log("effect 2");
     setUpdatedCounter("count two updated");
   }, [countTwo]);
-
 
   return (
     <div>
@@ -54,7 +59,6 @@ const UseEffectExample = () => {
           -
         </button>
       </div>
-     
     </div>
   );
 };
