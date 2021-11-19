@@ -10,8 +10,6 @@ function ReduxExample() {
           <Todo />
         </div>
         <div className="sub-container"></div>
-        <div className="sub-container"></div>
-        <div className="sub-container"></div>
       </div>
     </Provider>
   );

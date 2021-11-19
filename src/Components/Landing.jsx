@@ -1,45 +1,71 @@
 import { Link } from "react-router-dom";
-import "./landing.css"
+import "./landing.css";
 const Landing = () => {
   return (
-    <div>
-      <div>
-        <Link to="/use-state-example">UseStateExample</Link>
-      </div>
-      <div>
-        <Link to="/use-effect-example">UseEffectExample</Link>
-      </div>
-      <div>
-        <Link to="/use-memo-example">UseMemoExmple</Link>
-      </div>
-      <div>
-        <Link to="/use-ref-example">UserRefExmple</Link>
-      </div>
-      <div>
-        <Link to="/use-context-example">UseContextExample</Link>
-      </div>
-      <div>
-        <Link to="/use-reducer-example">UseReducerExample</Link>
-      </div>
-      <div>
-        <Link to="/use-callback-example">UseCallbackExample</Link>
-      </div>
-      <div>
-        <Link to="/use-custome-hook-example">UseCustomHookExample</Link>
-      </div>
-      <div>
-        <Link to="/api-and-web-woker">APIandWebWoker</Link>
-      </div>
-      <div>
-        <Link to="/use-imperative-handle-example">UseImperativeHandleExample</Link>
-      </div>
-      <div>
-        <Link to="/use-layout-effect-example">UseLayoutEffectExample</Link>
-      </div>
-      <div>
-        <Link to="/redux-example">ReduxExample</Link>
-      </div>
-    </div>
+    <>
+      <ul className="nav flex-column">
+        <li className="nav-item ">
+          <Link className="nav-link" to="/use-state-example">
+            UseStateExample
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/use-effect-example">
+            UseEffectExample
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/use-memo-example">
+            UseMemoExmple
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/use-ref-example">
+            UserRefExmple
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/use-context-example">
+            UseContextExample
+          </Link>
+        </li>
+        <li className="nav-item active">
+          <Link className="nav-link" to="/use-reducer-example">
+            UseReducerExample
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/use-callback-example">
+            UseCallbackExample
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/use-custome-hook-example">
+            UseCustomHookExample
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/api-and-web-woker">
+            APIandWebWoker
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/use-imperative-handle-example">
+            UseImperativeHandleExample
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/use-layout-effect-example">
+            UseLayoutEffectExample
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/redux-example">
+            ReduxExample
+          </Link>
+        </li>
+      </ul>
+    </>
   );
 };
 

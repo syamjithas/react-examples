@@ -38,6 +38,7 @@ const UseReducerExample = () => {
   return (
     <>
       <form onSubmit={handelSubmit}>
+        Type Test and press enter to add item to list
         <input
           type="text"
           value={name}

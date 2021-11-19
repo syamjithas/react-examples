@@ -11,7 +11,11 @@ const ContextComponent = () => {
   };
   return (
     <>
-      <button onClick={toggleTheme}>Toggle Theme</button>
+      <div>
+        <button className="btn btn-primary" onClick={toggleTheme}>
+          Toggle Theme
+        </button>
+      </div>
       <div style={themeStyle}>Context</div>
     </>
   );
