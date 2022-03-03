@@ -1,7 +1,7 @@
 import "../resources/redux-page.scss";
 import { store } from "../store/store";
 import { Provider } from "react-redux";
-import Todo from "../components/Todo";
+import Todo from "../Components/Todo";
 function ReduxExample() {
   return (
     <Provider store={store}>
